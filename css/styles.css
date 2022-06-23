@@ -1,12 +1,5 @@
 /*normalize*/
-html {
-    box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
+
 /*root*/
 :root {
     --backgroundcolor-primary: #fff;
