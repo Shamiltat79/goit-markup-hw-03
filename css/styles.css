@@ -30,9 +30,9 @@ body {
     font-size: 36px;
     text-align: center;
    }
-   /* .container {
+    .container {
     outline: 1px solid  tomato;
-   } */
+    } 
    .list {
     margin-top: 0;
     margin-bottom: 0;
@@ -43,7 +43,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1230px;
+    width: 1170px;
    margin-left: auto;
    margin-right: auto;
    }
@@ -288,36 +288,6 @@ body {
     margin-bottom: 0;
    }
 
-   /*button*/
-   .button-list {
-   display: flex;
-   list-style: none;
-      }
-.button-list> .button-item:not(:last-child) {
-    margin-right: 10px;
-}
-  
-   .navbutton { 
-    color: var(--primary-text-color);
-    background-color: var(--button-color);
-    cursor: pointer;
-    font-family: var(--font-family-primary);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
-    letter-spacing: 0.03em;
-    padding: 10px;
-    margin: 0;
-
-}
-.navbutton:active {
-    color: var(--accent-text-color);
-    background-color: var(--color-accent);
-}
-.navbutton:hover {
-    color: var(--accent-text-color);
-        background-color: var(--color-accent);
-}
  .team-list h3 {
     font-weight: 500;
     font-size: 16px;
@@ -397,6 +367,25 @@ text-decoration: none;
 .tel-footer:focus {
     color: var(--color-accent)
 }
+/* Portfolio */
+.examples-nav {
+display: flex;
+width: 1170px;
+margin: 0 auto;
+justify-content: center;
+}
+.examples {
+display: flex;
+justify-content: start;
+width: 1170px;
+margin: 0 auto;
+}
+.example-items {
+margin-right: 30px;
+}
+.example-items:nth-child(3n) {
+    margin-right: 0;
+}
 
 .examples h3 {
 font-weight: 700;    
@@ -412,11 +401,55 @@ letter-spacing: 0.06em;
 }
 .example-list p {
 margin-bottom: 0;
+
     color: #757575;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
 }
 .example-list {
-    margin-top:  0    ;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:  0;
+    padding: 0;
+}
+/*button*/
+button::-moz-focus-inner {
+
+border-color: #fff;
+}
+
+.button-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 38px;
+}
+
+.button-list>.button-item:not(:last-child) {
+    margin-right: 10px;
+    border: 0;
+}
+
+.navbutton {
+    color: var(--primary-text-color);
+    background-color: var(--button-color);
+    cursor: pointer;
+    font-family: var(--font-family-primary);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    margin: 0;
+
+}
+
+.navbutton:active {
+    color: var(--accent-text-color);
+    background-color: var(--color-accent);
+}
+
+.navbutton:hover {
+    color: var(--accent-text-color);
+    background-color: var(--color-accent);
 }
