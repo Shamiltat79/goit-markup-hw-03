@@ -30,9 +30,9 @@ body {
     font-size: 36px;
     text-align: center;
    }
-   .container {
+   /* .container {
     outline: 1px solid  tomato;
-   }
+   } */
    .list {
     margin-top: 0;
     margin-bottom: 0;
@@ -40,7 +40,6 @@ body {
      
    /*nav*/
    .nav-container {
-    outline: 1px solid tomato;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -176,6 +175,7 @@ body {
   
    .featuгes-container {
     display: flex;
+    margin-bottom: 94px;
 
    }
    .features-list {
@@ -211,22 +211,77 @@ body {
     letter-spacing: 0.03em;
     margin: 0;
    }
-   .servises {
-    display: flex;
+   /* .servises {
+    
+   } */
+   .servises-container{
+   background-color: var(--backgroundcolor-primary);
+   }
+   .servises-container h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
    }
    .servis-list {
-   list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 0;
+    list-style: none;
+   }
+   .servislist-item {
+    margin-right: 30px;
+    margin-bottom: 0;
+   }
+   .servislist-item:nth-child(3n) {
+    margin-right: 0px;
+   }
+   /* team */
+   .team-container {
+    background-color:#f5f4fa ;
+    padding-top: 94px;
+    padding-bottom: 94px;
+   
+   }
+   .team-container h2 {
+    margin-top: 0px;
+    margin-bottom: 50px;
    }
    .team-list {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    width: 1170px;
+    text-align: center;
     list-style: none;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    
    }
+   .item-data {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--backgroundcolor-primary);
+   }
+   .item-data h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+   
+   }
+   
    .team-list p {
+    margin: 0;
     color: #757575;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+   }
+   .teamlist-item {
+    margin-right: 30px;
+   } 
+   
+   .teamlist-item:nth-child(4n) {
+    margin-right: 0;
    }
    .example-list {
     list-style: none;
@@ -268,9 +323,34 @@ body {
     font-size: 16px;
 }
 footer {
+background-color: #2f303a;
+}
+.footer-container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 60px 0;
     background-color: #2f303a;
 }
+.logotype-footer {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+color: var(--color-accent);
+}
+.footerlink {
+    display: inline-block;
+    font-family: var(--font-family-logo);
+    margin-bottom: 20px;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: var(--primary-line-height);
+        color: #000;
+        text-decoration: none;
+}
 .footer-logo {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
     color: var(--accent-text-color);
     font-family: var(--font-family-logo);
     font-size: 26px;
@@ -278,19 +358,57 @@ footer {
     line-height: var(--primary-line-height);
 }
 .contacts {
+    display: block;
     font-style: normal;
     line-height: 1.71;
     color: var(--accent-text-color);
 }
 .contacts a {
        text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);;
+    color: rgba(255, 255, 255, 0.6);
 }
+.mail-link-footer {
+display: block;
+margin-bottom: 9px;
+font-family: var(--font-family-primary);
+font-size: 14px;
+font-weight: 500;
+line-height: var(--primary-line-height);
+color: #757575;
+text-decoration: none;
+}
+
+.mail-link-footer:hover,
+.mail-link-footer:active,
+.mail-link-footer:focus {
+    color: var(--color-accent)
+}
+.tel-footer {
+display: block;
+font-family: var(--font-family-primary);
+font-size: 14px;
+font-weight: 500;
+line-height: var(--primary-line-height);
+color: #757575;
+text-decoration: none;
+}
+
+.tel-footer:hover,
+.tel-footer:focus {
+    color: var(--color-accent)
+}
+
 .examples h3 {
 font-weight: 700;    
 font-size: 18px;  
 line-height: 2;
 letter-spacing: 0.06em;
+}
+.contacts p {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 9px;
+    margin-left: 0;
 }
 .example-list p {
 margin-bottom: 0;
